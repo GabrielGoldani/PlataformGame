@@ -7,9 +7,9 @@ import Mario from '../assets/mario.jpeg';
 import Snaky from '../assets/snake-game.png';
 
 const games = [
-    { title: 'Floopy Bird', description: 'Um jogo simples em feito html, css e js. Inspirado em Flappy Bird', image: Bird, link: '/playing' },
-    { title: 'Marryo', description: 'Um jogo simples feito em html, css e js. Inspirado no Mario', image: Mario, link: '/playing2' },
-    { title: 'Snaky Game', description: 'Um jogo simples feito em html, css e js. Inspirado no jogo da cobrinha', image: Snaky, link: '/playing3' }
+    { title: 'Floopy Bird', description: 'Um jogo simples feito em HTML, CSS e JS. Inspirado em Flappy Bird', image: Bird, link: '/playing' },
+    { title: 'Marryo', description: 'Um jogo simples feito em HTML, CSS e JS. Inspirado no Mario', image: Mario, link: '/playing2' },
+    { title: 'Snaky Game', description: 'Um jogo simples feito em HTML, CSS e JS. Inspirado no jogo da cobrinha', image: Snaky, link: '/playing3' }
 ];
 
 const Home = () => {
@@ -18,6 +18,7 @@ const Home = () => {
             <Navbar />
             <div className="main-container">
                 <h2>Bem-vindo ao Site de Jogos</h2>
+                <p className="educational-message">Este site tem o objetivo educacional e foi desenvolvido para disciplina de Projeto Tecnológico em Desenvolvimento de Sistemas.</p>
                 <section>
                     <h2 className="section-title">Jogos Recentes</h2>
                     <div className="games-container">
@@ -61,6 +62,9 @@ const Home = () => {
                     </div>
                 </section>
             </div>
+            <footer className="footer">
+                <p>Este site tem o objetivo educacional e foi desenvolvido para disciplina de Projeto Tecnológico em Desenvolvimento de Sistemas.</p>
+            </footer>
         </div>
     );
 };
