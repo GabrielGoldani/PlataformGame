@@ -5,15 +5,15 @@ services:
     working_dir: /app
     volumes:
       - ./backend:/app
-    command: sh -c "npm install && npm run start:dev"
+    command: sh -c "npm install && npm install @nestjs/config @nestjs/jwt @nestjs/passport bcryptjs passport-jwt && npm run start:dev"
     ports:
-      - "5000:5000"
+      - "5014:5014"
     depends_on:
       - mongo
     environment:
-      - MONGO_HOST=localhost
+      - MONGO_HOST=mongo
       - MONGO_PORT=27017
-      - MONGO_URI=mongodb://localhost:27017/plataformgame
+      - MONGO_URI=mongodb://mongo:27017/plataformgame
       - JWT_SECRET=my_secret_jwt
 
   frontend:
