@@ -1,0 +1,152 @@
+﻿/* Playing.css */
+
+.main-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.game-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+.comments-section {
+    margin-top: 40px;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-list .comment-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.comment-input {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.comment-button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.comment-button:hover {
+    background-color: #0056b3;
+}
+
+.clear-comments-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.clear-comments-button:hover {
+    background-color: #c82333;
+}
+
+.comment-form {
+    margin-top: 20px;
+}
+
+.comment-list .comment-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-list .comment-item .comment-text {
+    margin-left: 10px;
+}
+
+.comment-list .comment-item.user-comment {
+    justify-content: flex-start;
+}
+
+.comment-list .comment-item.user-comment .comment-text {
+    margin-right: 10px;
+}
+
+.game-container {
+    margin-bottom: 20px;
+}
+
+.separator {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rectangle {
+    width: 80%;
+    max-width: 800px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+

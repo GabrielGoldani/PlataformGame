@@ -1,0 +1,91 @@
+﻿.navbar {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #ffd31d;
+}
+
+.account-menu {
+    display: flex;
+    align-items: center;
+}
+
+.account-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: auto;
+    transition: background-color 0.3s ease;
+}
+
+.account-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.account-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 100;
+}
+
+.account-dropdown.active {
+    display: flex;
+}
+
+.account-dropdown-item {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: background-color 0.3s ease;
+}
+
+.account-dropdown-item:hover {
+    background-color: #f0f0f0;
+}

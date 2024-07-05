@@ -1,0 +1,38 @@
+﻿/* Game1.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.game1Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+.scoreContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px; 
+}
+
+canvas {
+    border: 3px solid #28262C;
+    border-radius: 10px;
+}

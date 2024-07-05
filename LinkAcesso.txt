@@ -1,0 +1,3 @@
+https://plataform-game-front-end.vercel.app/
+
+O software/site que utilizei, o plano free, tinha uma condição que levaria de 50 segundos até uns minutos da primeira request para o backend inicializar, então pode ocorrer isto durante o acesso.

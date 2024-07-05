@@ -1,0 +1,42 @@
+﻿/* Game3.module.css */
+
+.game3Page {
+    overflow: hidden;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    padding-top: 50px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pontuacao {
+    background: #222222;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    margin-top: 10px;
+}
+
+canvas {
+    border: 3px solid #28262C;
+    border-radius: 10px 10px 0 0;
+}
