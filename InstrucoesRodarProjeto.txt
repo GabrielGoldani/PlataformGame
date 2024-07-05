@@ -5,7 +5,7 @@ Instruções para rodar o projeto com Docker
     -Suba os containers do Docker:
     -docker-compose up -d
     -Acesse o projeto:
-    	Abra o navegador e acesse http://localhost:3000/home.
+    	Abra o navegador e acesse http://localhost:3000/home
 
 
 Instruções de instalação do Docker
