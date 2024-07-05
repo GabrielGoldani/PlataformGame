@@ -5,7 +5,7 @@ services:
     working_dir: /app
     volumes:
       - ./backend:/app
-    command: sh -c "npm install && npm install @nestjs/config @nestjs/jwt @nestjs/passport bcryptjs passport-jwt && npm run start:dev"
+    command: sh -c "npm install && chmod +x node_modules/.bin/nest && npm install @nestjs/config @nestjs/jwt @nestjs/passport bcryptjs passport-jwt && npm run start:dev"
     ports:
       - "5014:5014"
     depends_on:
