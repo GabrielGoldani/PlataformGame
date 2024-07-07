@@ -8,6 +8,7 @@ import PlayBird from '../assets/PlayBird.jpg';
 const Playing = () => {
     const [comments, setComments] = useState([]);
     const [newComment, setNewComment] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
         fetchComments();
@@ -24,6 +25,15 @@ const Playing = () => {
 
     const handleCommentSubmit = async (e) => {
         e.preventDefault();
+
+        const regex = /^[a-zA-ZÀ-ÿ\s,]+$/;
+        if (!regex.test(newComment.trim())) {
+            setErrorMessage('O comentário deve conter apenas letras e espaços.');
+            return;
+        }
+
+        setErrorMessage('');
+
         if (newComment.trim() !== '') {
             try {
                 const response = await axios.post('http://localhost:5014/comments', {
@@ -82,6 +92,7 @@ const Playing = () => {
                             </li>
                         ))}
                     </ul>
+                    {errorMessage && <p className="error-message">{errorMessage}</p>}
                     <form onSubmit={handleCommentSubmit} className="comment-form">
                         <textarea
                             className="comment-input"
